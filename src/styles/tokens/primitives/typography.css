@@ -1,7 +1,7 @@
 @layer tokens {
     :root {
         /* Font-family */
-        --font-family: 'Rubik', sans-serif;
+        --rubik-family: 'Rubik', sans-serif;
 
         /* Font size scale */
         --base-font: 16;

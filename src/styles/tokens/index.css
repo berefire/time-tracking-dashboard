@@ -4,5 +4,7 @@
 @import "@tokens/primitives/spacing.css";
 @import "@tokens/primitives/typography.css";
 
+@import "@tokens/semantics/colors.css";
+@import "@tokens/semantics/typography.css";
 
 

@@ -1,3 +1,27 @@
 @layer tokens {
-    
+    :root {
+        --bg-primary: var(--navy-950);
+        --bg-header: var(--purple-600);
+        --bg-card: var(--navy-900);
+        --bg-card--work: var(--orange-300);
+        --bg-card--play: var(--blue-300);
+        --bg-card--study: var(--pink-400);
+        --bg-card--exercise: var(--green-400);
+        --bg-card--social: var(--purple-700);
+        --bg-card--self-care: var(--yellow-300);
+        --fc-report: var(--navy-200);
+        --fc-name: var(--white);
+        --fc-buttons: var(--purple-500);
+        --fc-button-selected: var(--white);
+        --fc-body: var(--white);
+        --fc-previous-time: var(--navy-200);
+        --fc-options-icon: var(--navy-200);
+
+        --bg-work-icon: #D96C47;
+        --bg-play-icon: #3F9CBB;
+        --bg-study-icon: #F04667;
+        --bg-exercise-icon: #29BA66;
+        --bg-social-icon: #5A1CBB;
+        --bg-self-care-icon: #E6A532;
+    }
 }

@@ -1,0 +1,5 @@
+@layer tokens {
+    :root {
+        --font-family-base: var(--rubik-family);
+    }
+}
