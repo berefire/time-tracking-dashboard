@@ -1,0 +1,7 @@
+@layer components {
+    .attribution {
+        font-size: clamp(0.6875rem, 1vw, 0.8125rem);
+        text-align: center;
+        color: black;
+    }
+}
