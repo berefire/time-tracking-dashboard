@@ -2,6 +2,8 @@
     .cluster {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: start;
         gap: var(--gap-profile-card__info);
     }
 
@@ -14,6 +16,7 @@
     @media(min-width: 64em) {
         .cluster {
             flex-direction: column;
+            align-items: flex-start;
         }
 
         .cluster-sm {

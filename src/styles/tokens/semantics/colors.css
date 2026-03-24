@@ -3,6 +3,7 @@
         --bg-primary: var(--navy-950);
         --bg-header: var(--purple-600);
         --bg-card: var(--navy-900);
+        --bg-card-hover: var(--navy-800);
         --bg-card--work: var(--orange-300);
         --bg-card--play: var(--blue-300);
         --bg-card--study: var(--pink-400);

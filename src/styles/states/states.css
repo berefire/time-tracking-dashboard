@@ -1,0 +1,25 @@
+@layer states {
+  .activity--work {
+    background-color: var(--bg-card--work);
+  }
+
+  .activity--play {
+    background-color: var(--bg-card--play);
+  }
+
+  .activity--study {
+    background-color: var(--bg-card--study);
+  }
+
+  .activity--exercise {
+    background-color: var(--bg-card--exercise);
+  }
+
+  .activity--social {
+    background-color: var(--bg-card--social);
+  }
+
+  .activity--self-care {
+    background-color: var(--bg-card--self-care);
+  }
+}

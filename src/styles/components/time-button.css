@@ -41,6 +41,10 @@
         color: var(--fc-button-selected);
     }
 
+    .time-button:hover {
+        color: var(--fc-button-hover);
+    }
+
 
     @media (min-width: 64em) {
         .time-button {
