@@ -1,0 +1,22 @@
+@layer layout {
+    .box-xl {
+        padding-block: calc( 81 / var(--base) * 1rem); /* 81px */
+    }
+
+    .box-lg {
+        padding: var(--padding-profile-card__info);
+    }
+    .box-sm {
+        padding-block: var(--padding-profile-card__time-buttons);
+    }
+
+    .box {
+        padding: var(--padding-profile-card__others-button);
+    }
+
+    @media(min-width: 48em) {
+        .box-xl {
+            padding: 0;
+        }
+    }
+}

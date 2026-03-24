@@ -1,0 +1,57 @@
+@layer components {
+    .profile-card {
+        background-color: var(--bg-card);
+        border-radius: var(--br-card);
+    }
+
+    .profile-card__info {
+        background-color: var(--bg-header);
+        border-radius: var(--br-card);
+    }
+
+    .profile-card__avatar {
+        block-size: calc(64 / var(--base) * 1rem);   /* 64px */
+        inline-size: calc(64 / var(--base) * 1rem);  /* 64px */
+        border-radius: 50%;
+        border: 0.1875em solid var(--bg-border);
+    }
+
+    .profile-card__report {
+        font-size: var(--fs-report);
+        line-height: var(--lh-report);
+        font-weight: var(--fw-regular);
+        color: var(--fc-report);
+    }
+
+    .profile-card__name {
+        font-size: var(--fs-name);
+        line-height: var(--lh-name);
+        font-weight: var(--fw-light);
+    }
+
+    .time-button {
+        inline-size: calc(109 / var(--base) * 1rem); /* 109px */
+        block-size: calc(21 / var(--base) * 1rem); /* 21px */
+        font-size: var(--fs-time-button);
+        line-height: var(--lh-time-button);
+        color: var(--fc-buttons);
+    }
+
+    .time-button[aria-pressed="true"] {
+        color: var(--fc-button-selected);
+    }
+
+
+    @media (min-width: 64em) {
+        .time-button {
+            inline-size: max-content;
+            block-size: calc(21 / var(--base) * 1rem); /* 21px */
+        }
+
+        .profile-card__details {
+            margin-block-end: calc(30 / var(--base) * 1rem); /* 60px */
+        }
+    }
+
+
+}

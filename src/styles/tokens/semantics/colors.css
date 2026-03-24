@@ -9,19 +9,13 @@
         --bg-card--exercise: var(--green-400);
         --bg-card--social: var(--purple-700);
         --bg-card--self-care: var(--yellow-300);
-        --fc-report: var(--navy-200);
+        --fc-report: var(--grey-200);
         --fc-name: var(--white);
         --fc-buttons: var(--purple-500);
         --fc-button-selected: var(--white);
         --fc-body: var(--white);
         --fc-previous-time: var(--navy-200);
         --fc-options-icon: var(--navy-200);
-
-        --bg-work-icon: #D96C47;
-        --bg-play-icon: #3F9CBB;
-        --bg-study-icon: #F04667;
-        --bg-exercise-icon: #29BA66;
-        --bg-social-icon: #5A1CBB;
-        --bg-self-care-icon: #E6A532;
+        --bg-border: var(--white);
     }
 }

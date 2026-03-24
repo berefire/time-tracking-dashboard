@@ -1,0 +1,26 @@
+@layer layout {
+    .cluster {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap-profile-card__info);
+    }
+
+    .cluster-sm {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media(min-width: 64em) {
+        .cluster {
+            flex-direction: column;
+        }
+
+        .cluster-sm {
+            padding-inline-start: var(--margin-cluster);
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: calc(21 / var(--base) * 1rem);
+        }
+    }
+}

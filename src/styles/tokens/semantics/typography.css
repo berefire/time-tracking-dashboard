@@ -1,5 +1,36 @@
 @layer tokens {
     :root {
         --font-family-base: var(--rubik-family);
+
+        --fs-report: var(--font-size-6);
+        --fs-name: var(--font-size-4);
+        --fs-time-button: var(--font-size-5);
+        --fs-activity: var(--font-size-5);
+        --fs-current-time: var(--font-size-3);
+        --fs-previous-time: var(--font-size-6);
+
+        
+        --fw-light: var(--font-weight-300);
+        --fw-regular: var(--font-weight-400);
+        --fw-medium: var(--font-weight-500);
+
+        --lh-name: var(--line-height-4);
+        --lh-report: var(--line-height-6);
+        --lh-time-button: var(--line-height-5);
+        --lh-activity: var(--line-height-5);
+        --lh-current-time: var(--line-height-3);
+}
+  @media (min-width: 48em) {
+        :root {
+            --fs-current-time: var(--font-size-1);
+            --lh-current-time: var(--line-height-1);
+        }
+    }
+
+    @media (min-width: 64em) {
+        :root {
+            --fs-name: var(--font-size-2);
+            --lh-name: var(--line-height-2);
+        }
     }
 }

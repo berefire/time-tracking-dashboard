@@ -1,0 +1,61 @@
+@layer layout {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main-card"
+      "work-card"
+      "play-card"
+      "study-card"
+      "exercise-card"
+      "social-card"
+      "self-care-card";
+    row-gap: var(--gap-profile-card);
+  }
+
+  .grid > :nth-child(1) {
+    grid-area: main-card;
+  }
+  .grid > :nth-child(2) {
+    grid-area: work-card;
+  }
+  .grid > :nth-child(3) {
+    grid-area: play-card;
+  }
+  .grid > :nth-child(4) {
+    grid-area: study-card;
+  }
+  .grid > :nth-child(5) {
+    grid-area: exercise-card;
+  }
+  .grid > :nth-child(6) {
+    grid-area: social-card;
+  }
+
+  .grid > :nth-child(7) {
+    grid-area: self-care-card;
+  }
+}
+
+@media (min-width: 48em) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "main-card main-card main-card"
+      "work-card play-card study-card"
+      "exercise-card social-card self-care-card";
+    column-gap: var(--gap-profile-card);
+  }
+}
+
+@media (min-width: 64em) {
+  .grid {
+    max-inline-size: 1116px;
+    max-block-size: 520px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "main-card work-card play-card study-card"
+      "main-card exercise-card social-card self-care-card";
+  }
+}

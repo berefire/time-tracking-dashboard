@@ -1,0 +1,113 @@
+@layer components {
+    .activity {
+        border-radius: var(--br-card);
+    }
+
+    .activity__details {
+        background-color: var(--bg-card);
+        border-radius: var(--br-card);
+    }
+
+    .activity--work {
+        background-color: var(--bg-card--work);
+    }
+
+    .activity--play {
+        background-color: var(--bg-card--play);
+    }
+
+    .activity--study {
+        background-color: var(--bg-card--study);
+    }
+
+    .activity--exercise {
+        background-color: var(--bg-card--exercise);
+    }
+
+    .activity--social {
+        background-color: var(--bg-card--social);
+    }
+
+    .activity--self-care {
+        background-color: var(--bg-card--self-care);
+    }
+
+    .activity__figure {
+        block-size: calc(38 / var(--base) * 1rem);   /* 38px */
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .activity__icon {
+        --position-x: calc(-17.42 / var(--base) * 1rem); /* 17.42px */
+        --position-y: calc(-10 / var(--base) * 1rem); /* 10px */
+
+        transform: translate(var(--position-x), var(--position-y));    
+    }
+
+    .icon-work, .icon-study {
+        block-size: calc(78 / var(--base) * 1rem);   /* 78px */
+        inline-size: calc(78 / var(--base) * 1rem);  /* 78px */ 
+    }
+
+    .icon-play {
+        block-size: calc(90 / var(--base) * 1rem);   /* 90px */
+        inline-size: calc(90 / var(--base) * 1rem);  /* 90px */
+
+    }
+
+    .icon-exercise {
+        --position-x: calc(-17.42 / var(--base) * 1rem); /* 17.42px */
+        --position-y: calc(-1 / var(--base) * 1rem); /* 1px */
+
+        block-size: calc(53.48 / var(--base) * 1rem);   /* 53.48px */
+        inline-size: calc(79.65 / var(--base) * 1rem);  /* 79.65px */
+
+        transform: translate(var(--position-x), var(--position-y));
+    }
+
+    .icon-social {
+        --position-x: calc(-17.42 / var(--base) * 1rem); /* 17.42px */
+        --position-y: calc(-15 / var(--base) * 1rem); /* 15px */
+
+        block-size: calc(100 / var(--base) * 1rem);   /* 100px */
+        inline-size: calc(73.6 / var(--base) * 1rem);  /* 73.6px */ 
+        transform: translate(var(--position-x), var(--position-y));
+    }
+
+    .icon-self-care {
+        --position-x: calc(-17.42 / var(--base) * 1rem); /* 17.42px */
+        --position-y: calc(-12 / var(--base) * 1rem); /* 12px */
+
+        block-size: calc(66 / var(--base) * 1rem);   /* 66px */
+        inline-size: calc(72 / var(--base) * 1rem);  /* 72px */ 
+        transform: translate(var(--position-x), var(--position-y));
+    }
+
+    .activity__time-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .activity__current-time {
+        font-size: var(--fs-current-time);
+        font-weight: var(--fw-light);
+        color: var(--lh-current-time);
+    }
+
+    .activity__time-stamp {
+        font-size: var(--fs-previous-time);
+        font-weight: var(--fw-regular);
+        color: var(--fc-previous-time);
+    }
+
+    @media (min-width: 48em) {
+        .activity__time-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }   
+
+}

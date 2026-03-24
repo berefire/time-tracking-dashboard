@@ -2,6 +2,7 @@
     html {
         background-color: var(--bg-primary);
         font-family: var(--font-family-base);
+        font-weight: var(--fw-light);
         color: var(--fc-body);
         -webkit-text-size-adjust: 100%;
     }

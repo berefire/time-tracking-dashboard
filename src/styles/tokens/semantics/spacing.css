@@ -1,0 +1,19 @@
+@layer tokens {
+    :root {
+        
+        --br-card: calc(15 / var(--base) * 1rem); /* 15px */
+        --margin-cluster: var(--spacing-300);
+        --padding-profile-card__info: var(--spacing-400);
+        --padding-profile-card__time-buttons: var(--spacing-300);
+        --padding-profile-card__others-button: var(--spacing-300);
+        --gap-profile-card__info: var(--spacing-300);
+        --gap-profile-card: var(--spacing-300);
+        --gap-activity-card: var(--spacing-100);
+    }
+
+    @media (min-width: 64em){
+        :root {
+            --gap-profile-card__info: var(--spacing-500);
+        }
+    }
+}
