@@ -1,13 +1,13 @@
-export const state = {
-    timeframe: 'weekly', // initial value
-    data: []
-};
+export const state = Object.seal({
+    timeframe: "weekly",
+    data: [],
+});
 
 //setters
-export function setTimeFrame(timeframe) {
-    state.timeframe = timeframe;
-}
-
 export function setData(data) {
     state.data = data;
+}
+
+export function setTimeframe(timeframe) {
+    state.timeframe = timeframe;
 }

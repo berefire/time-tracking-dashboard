@@ -1,18 +1,10 @@
-import { updateTimeFrame } from "./dashboard.controller";
+import { updateTimeframe } from './dashboard.controller.js';
 
-export function setupEventListeners() {
-  const buttons = document.querySelectorAll("[data-timeframe]");
+export function setupEvents() {
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('[data-timeframe]');
+    if (!btn) return;
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const timeframe = button.dataset.timeframe;
-
-      buttons.forEach((btn) => btn.setAttribute("aria-pressed", "false"));
-      button.setAttribute("aria-pressed", "true");
-
-      updateTimeFrame(timeframe);
-
-      button.focus();
-    });
+    updateTimeframe(btn.dataset.timeframe);
   });
 }

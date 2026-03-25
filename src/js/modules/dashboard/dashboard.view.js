@@ -1,35 +1,50 @@
-function getLabel(timeframe) {
-  switch (timeframe) {
-    case "daily":
-      return "Yesterday";
-    case "weekly":
-      return "Last Week";
-    case "monthly":
-      return "Last Month";
-    default:
-      return "";
-  }
+import { ACTIVITY_MAP } from "./dashboard.mapper.js";
+
+const elements = Object.fromEntries(
+    [...document.querySelectorAll("[data-activity]")].map((card) => [
+        card.dataset.activity,
+        {
+            currentTime: card.querySelector('.activity__current-time'),
+            previousTime: card.querySelector('.activity__previous-time'),
+            labelTime: card.querySelector('.activity__previous-timeframe'),
+        }
+    ])
+);
+
+const LABELS = {
+    daily: "Yesterday",
+    weekly: "Last Week",
+    monthly: "Last Month",
 }
 
-function mapTitleToKey(title) {
-  return title.toLowerCase().replace(/\s+/g, "-");
+function mapActivity(activity, timeframe) {
+    const { current, previous } = activity.timeframes[timeframe];
+    return {
+        current: `${current}hrs`,
+        previous: `${previous}hrs`
+    };
 }
 
 export function render(state) {
   state.data.forEach((activity) => {
-    const key = mapTitleToKey(activity.title);
+    const key = ACTIVITY_MAP[activity.title];
+    const actions = elements[key];
 
-    const card = document.querySelector(`[data-activity="${key}"]`);
-    if (!card) return;
+    if (!actions) return;
 
-    const currentTime = card.querySelector('.activity__current-time');
-    const previousTime = card.querySelector('.activity__previous-time');
-    const labelTime = card.querySelector('.activity__previous-timeframe');
+    const data = mapActivity(activity, state.timeframe);
 
-    const timeframeData = activity.timeframes[state.timeframe];
-
-    currentTime.textContent = `${timeframeData.current}hrs`;
-    previousTime.textContent = `${timeframeData.previous}hrs`;
-    labelTime.textContent = getLabel(state.timeframe);
+    actions.currentTime.textContent = data.current;
+    actions.previousTime.textContent = data.previous;
+    actions.labelTime.textContent = LABELS[state.timeframe];
   });
+}
+
+export function syncPressedState(timeframe) {
+    const buttons = document.querySelectorAll("[data-timeframe]");
+
+    buttons.forEach((button) => {
+        const isPressed = button.dataset.timeframe === timeframe;
+        button.setAttribute("aria-pressed", isPressed);
+    });
 }
