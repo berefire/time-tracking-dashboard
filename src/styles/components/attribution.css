@@ -1,6 +1,6 @@
 @layer components {
     .attribution {
-        font-size: clamp(0.6875rem, 1vw, 0.8125rem);
+        font-size: clamp(0.6875em, 1vw, 0.8125em);
         text-align: center;
         color: white;
     }

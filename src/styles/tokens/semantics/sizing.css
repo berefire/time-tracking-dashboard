@@ -1,0 +1,40 @@
+@layer tokens {
+    :root {
+        --block-size-avatar: var(--size-64);
+        --inline-size-avatar: var(--size-64);
+        --inline-size-time-button: var(--size-109);
+        --block-size-time-button: var(--size-21);
+        --max-inline-size-dashboard: var(--size-327);
+        --max-block-size-dashboard: var(--size-1307);
+        --block-size-activity-figure: var(--size-38);
+
+        --inline-size-icon-work: var(--size-78);
+        --inline-size-icon-study: var(--size-78);
+        --inline-size-icon-play: var(--size-90);
+        --inline-size-icon-self-care: var(--size-72);
+
+        --block-size-icon-work: var(--size-78);
+        --block-size-icon-study: var(--size-78);
+        --block-size-icon-play: var(--size-90);
+        --block-size-icon-social: var(--size-100);
+        --block-size-icon-self-care: var(--size-66);
+    }
+
+    @media (min-width: 48em) {
+        :root {
+            --max-inline-size-dashboard: var(--size-612);
+            --max-block-size-dashboard: var(--size-677);
+
+            --block-size-activity-figure: var(--size-33);
+        }
+    }
+
+    @media (min-width: 64em) {
+        :root {
+            --max-inline-size-dashboard: var(--size-1116);
+            --max-block-size-dashboard: var(--size-520);
+
+            --block-size-activity-figure: var(--size-38);
+        }
+    }
+}

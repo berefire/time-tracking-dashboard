@@ -10,8 +10,8 @@
     }
 
     .profile-card__avatar {
-        block-size: calc(64 / var(--base) * 1rem);   /* 64px */
-        inline-size: calc(64 / var(--base) * 1rem);  /* 64px */
+        block-size: var(--block-size-avatar);
+        inline-size: var(--inline-size-avatar);
         border-radius: 50%;
         border: 0.1875em solid var(--bg-border);
     }
@@ -30,8 +30,8 @@
     }
 
     .time-button {
-        inline-size: calc(109 / var(--base) * 1rem); /* 109px */
-        block-size: calc(21 / var(--base) * 1rem); /* 21px */
+        inline-size: var(--inline-size-time-button);
+        block-size: var(--block-size-time-button);
         font-size: var(--fs-time-button);
         line-height: var(--lh-time-button);
         color: var(--fc-buttons);
@@ -49,11 +49,10 @@
     @media (min-width: 64em) {
         .time-button {
             inline-size: max-content;
-            block-size: calc(21 / var(--base) * 1rem); /* 21px */
         }
 
         .profile-card__details {
-            margin-block-end: calc(30 / var(--base) * 1rem); /* 60px */
+            margin-block-end: calc(30 / var(--base) * 1rem); /* 30px */
         }
     }
 

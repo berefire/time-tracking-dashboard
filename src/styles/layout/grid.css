@@ -1,5 +1,7 @@
 @layer layout {
   .grid {
+    max-inline-size: var(--max-inline-size-dashboard);
+    max-block-size: var(--max-block-size-dashboard);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -51,8 +53,6 @@
 
 @media (min-width: 64em) {
   .grid {
-    max-inline-size: 1116px;
-    max-block-size: 520px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "main-card work-card play-card study-card"
