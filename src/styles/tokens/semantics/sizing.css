@@ -5,7 +5,6 @@
         --inline-size-time-button: var(--size-109);
         --block-size-time-button: var(--size-21);
         --max-inline-size-dashboard: var(--size-327);
-        --max-block-size-dashboard: var(--size-1307);
         --block-size-activity-figure: var(--size-38);
 
         --inline-size-icon-work: var(--size-78);
@@ -23,18 +22,16 @@
     @media (min-width: 48em) {
         :root {
             --max-inline-size-dashboard: var(--size-612);
-            --max-block-size-dashboard: var(--size-677);
-
             --block-size-activity-figure: var(--size-33);
         }
     }
 
     @media (min-width: 64em) {
         :root {
+            --block-size-avatar: var(--size-74);
+            --inline-size-avatar: var(--size-74);
             --max-inline-size-dashboard: var(--size-1116);
-            --max-block-size-dashboard: var(--size-520);
-
-            --block-size-activity-figure: var(--size-38);
+            --block-size-activity-figure: var(--size-45);
         }
     }
 }

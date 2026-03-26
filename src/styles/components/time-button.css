@@ -52,7 +52,7 @@
         }
 
         .profile-card__details {
-            margin-block-end: calc(30 / var(--base) * 1rem); /* 30px */
+            margin-block-end: calc(36 / var(--base-sizing) * 1rem); /* 36px */
         }
     }
 

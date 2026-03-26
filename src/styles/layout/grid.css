@@ -1,7 +1,6 @@
 @layer layout {
   .grid {
     max-inline-size: var(--max-inline-size-dashboard);
-    max-block-size: var(--max-block-size-dashboard);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
