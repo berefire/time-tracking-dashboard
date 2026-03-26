@@ -33,11 +33,12 @@
         inline-size: var(--inline-size-time-button);
         block-size: var(--block-size-time-button);
         font-size: var(--fs-time-button);
+        font-weight: var(--fw-regular);
         line-height: var(--lh-time-button);
         color: var(--fc-buttons);
     }
 
-    .time-button[aria-pressed="true"] {
+    .time-button[aria-checked="true"] {
         color: var(--fc-button-selected);
     }
 

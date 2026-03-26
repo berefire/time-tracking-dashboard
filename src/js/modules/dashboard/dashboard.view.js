@@ -41,10 +41,13 @@ export function render(state) {
 }
 
 export function syncPressedState(timeframe) {
-    const buttons = document.querySelectorAll("[data-timeframe]");
+    document.querySelectorAll('[data-timeframe]').forEach(btn => {
+        const isPressed = btn.dataset.timeframe === timeframe;
 
-    buttons.forEach((button) => {
-        const isPressed = button.dataset.timeframe === timeframe;
-        button.setAttribute("aria-pressed", isPressed);
+        isPressed ?
+            btn.setAttribute('tabindex', '0') :
+            btn.setAttribute('tabindex', '-1');
+        
+        btn.setAttribute('aria-checked', isPressed);
     });
 }
