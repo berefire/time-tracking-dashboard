@@ -1,25 +1,50 @@
 # Frontend Mentor - Time tracking dashboard solution
 
-This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![GitHub last commit](https://img.shields.io/github/last-commit/berefire/time-tracking-dashboard)
+![Repo size](https://img.shields.io/github/repo-size/berefire/time-tracking-dashboard)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
+[![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
+![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
+![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
+
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
+- [Overview](#-overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](#-screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [My process](#️-my-process)
+  - [Built with](#-built-with)
+  - [What I learned](#-what-i-learned)
+  - [Continued development](#-continued-development)
+  - [Useful resources](#-useful-resources)
+  - [AI Collaboration](#-ai-collaboration)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
-## Overview
+## 📋 Overview
+
+This project is a time tracking dashboard that dynamically displays activity data based on selected timeframes (daily, weekly, monthly).
+
+The main focus of this implementation was:
+
+- Modular JavaScript architecture
+- Clean separation of concerns
+- Accessibility improvements
+- Scalable CSS architecture using CUBE CSS
+- Data-driven UI rendering
+
+---
 
 ### The challenge
 
@@ -29,95 +54,166 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-### Screenshot
+---
 
-![](./screenshot.jpg)
+### 📸 Screenshot
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+| _Mobile (375x914)_ | _Tablet (768x914)_ | _Desktop (1440x914)_ |
+| ------------------ | ------------------ | -------------------- |
+| ![Mobile](./public/assets/screenshots/mobile.png) | ![Tablet](./public/assets/screenshots/tablet.png) | ![Desktop](./public/assets/screenshots/desktop.png) |
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+| _Active States_ |
+| --------------- |
+| ![Hover Buttons](./public/assets/screenshots/hover-button.png) ![Hover Cards](./public/assets/screenshots/hover-card.png) |
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+---
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://berefire.github.io/time-tracking-dashboard/](https://your-live-site-url.com)
 
-## My process
+---
 
-### Built with
+## ⚙️ My Process
+
+### 🛠 Built With
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- CSS custom properties (Design Tokens)
+- **CUBE CSS architecture**
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- **Vanilla JavaScript (ES Modules)**
+- **Vite** for development and build tooling
+- Accessible UI patterns (ARIA attributes, state sync)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+---
 
-### What I learned
+### 🧠 What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+#### Modular JavaScript architecture
 
-To see how you can add code snippets, see below:
+The application was structured using a feature-based modular approach:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+- `state` → single source of truth
+- `service` → data fetching
+- `view` → DOM rendering
+- `controller` → orchestration
+- `events` → event handling
+- `mapper` → data adaptation layer
+
+This improved scalability and maintainability.
+
+#### Data transformation layer (Mapper)
+
+Since the API data did not include unique identifiers, I implemented a **mapping layer** to connect data with DOM elements:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const ACTIVITY_MAP = {
+  Work: 'work',
+  Play: 'play',
+  'Self Care': 'self-care'
+};
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+This decouples the UI from the data structure and avoids fragile string manipulation.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+#### DOM optimization
 
-### Continued development
+Instead of querying the DOM repeatedly, I cached elements:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+```js
+const elements = Object.fromEntries(...);
+```
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+This improved performance and simplified rendering logic.
 
-### Useful resources
+#### Accessibility improvements
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- `aria-pressed` for toggle buttons
+- `aria-live` for dynamic content updates
+- semantic HTML structure
+- keyboard-friendly interactions
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+#### Responsive design with tokens
 
-### AI Collaboration
+Responsive behavior was handled through design tokens:
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+- primitive tokens (sizes, spacing)
+- semantic tokens (component behavior)
+- responsive overrides in tokens instead of components
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+---
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+### 🚀 Continued development
 
-## Author
+In future iterations, I would like to improve:
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- State management patterns (closer to reactive systems)
+- Fine-grained DOM updates (partial rendering)
+- Advanced accessibility testing with screen readers
+- Performance optimization for larger datasets
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+---
 
-## Acknowledgments
+### 📖 Useful resources
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- [MDN Web Docs](https://developer.mozilla.org/es/) - excellent reference for HTML, CSS, and JavaScript
+- [WebAIM](https://webaim.org/) - accessibility guidelines and contrast checking
+- [Frontend Mentor](https://www.frontendmentor.io) - real-world frontend challenges and design files
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+---
+
+### 🤖 AI Collaboration
+
+AI tools were used as development assistants during this project.
+
+#### Tools used
+
+- ChatGPT – debugging, architecture improvements, accessibility guidance
+
+#### How AI was used
+
+AI was primarily used to:
+
+- Review and improve JavaScript architecture (modular design, separation of concerns)
+- Suggest accessibility improvements (ARIA attributes, state synchronization)
+- Assist in optimizing CSS architecture (tokens, CUBE CSS structure)
+- Help design a data transformation layer (mapper) to decouple UI from data
+- Support debugging and problem-solving during development
+- Assist in writing and refining project documentation
+
+#### What worked well
+
+AI was particularly useful for:
+
+- Identifying architectural improvements such as separating state, view, and controller logic
+- Suggesting the use of a mapper layer instead of fragile string normalization
+- Improving accessibility by recommending `aria-live`, `aria-pressed`, and better state synchronization
+- Helping reduce DOM queries by introducing element caching strategies
+- Providing clear explanations that helped reinforce understanding of frontend patterns
+
+#### What didn't work as expected
+
+Some suggestions required manual adjustments or validation:
+
+- Certain recommendations assumed control over the data structure (e.g., adding `id` to JSON), which was not possible in this project
+- Some architectural suggestions needed adaptation to fit the existing project scope and constraints
+- Not all performance optimizations were necessary for this project size and required judgment to avoid overengineering
+
+All AI-generated suggestions were reviewed, adapted, and implemented thoughtfully to ensure the final code remains clean, maintainable, and fully understood.
+
+---
+
+## 👤 Author
+
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
+
+---
+
+## 🙏 Acknowledgments
+
+Thanks to Frontend Mentor for providing practical challenges that help developers improve real-world frontend skills.
+
+---
