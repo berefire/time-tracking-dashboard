@@ -24,11 +24,10 @@ export function initView() {
 
         // Provide safe, non-throwing fallbacks so the UI keeps working
         const fallback = document.createElement("span"); // lightweight fallback node
-        return {
-          current: current || fallback, // use fallback node if missing
-          previous: previous || fallback,
-          label: label || fallback,
-        };
+        return [
+          key,
+          { currentTime: current || fallback, previousTime: previous || fallback, labelTime: label || fallback },
+        ];
       }
 
       return [

@@ -31,7 +31,6 @@
 
   .time-button {
     position: relative;
-    display: inline-block;
     flex: 1;
     text-align: center;
   }
@@ -64,7 +63,7 @@
     outline-offset: 0.1875em;
   }
 
-  .time-button--visual:hover {
+  .time-button__input:hover + .time-button--visual    {
     color: var(--fc-button-hover);
   }
 

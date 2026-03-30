@@ -10,13 +10,16 @@ function isValidTimeframe(value) {
 
 function announceTimeframe(timeframe) {
   const statusEl = document.getElementById("timeframe-status");
-  if (!isValidTimeframe(timeframe)) {
-    console.warn(`announceTimeframe: unexpected timeframe "${timeframe}"`);
-    // choose whether to early-return or announce a neutral message
-    statusEl.textContent = 'Timeframe changed.'; // less specific but always valid
-    return;
+  if (!statusEl) {
+    console.warn('announceTimeframe: missing #timeframe-status element');
+    return; // safely exit if there's nowhere to write the announcement
   }
 
+  if (!isValidTimeframe(timeframe)) {
+    console.warn(`announceTimeframe: unexpected timeframe "${timeframe}"`);
+    statusEl.textContent = 'Timeframe changed.'; // safe: statusEl exists
+    return;
+  }
   statusEl.textContent = `Timeframe set to ${TIMEFRAME_LABELS[timeframe]}. Activity times updated.`;
 }
 
