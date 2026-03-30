@@ -20,10 +20,10 @@
 
 <body>
   <main class="cover">
-    <section class="box-xl">
-      <ul class="grid" id="dashboard">
+    <section class="dashboard box-xl">
+      <ul class="cards grid">
         <li class="card--main">
-          <article class="profile-card">
+          <div class="profile-card">
             <header class="profile-card__info cluster box-lg">
               <img class="profile-card__avatar" height="234" width="234" src="/time-tracking-dashboard/assets/images/image-jeremy.png"
                 alt="Jeremy Robson's avatar">
@@ -34,44 +34,27 @@
             </header>
             <div class="profile-card__time box-sm cluster-sm" role="radiogroup" aria-label="Timeframe selection">
               <label class="time-button">
-                <input 
-                type="radio"
-                name="timeframe"
-                value="daily"
-                data-timeframe="daily" 
-                class="time-button__input"
-                />
+                <input type="radio" name="timeframe" value="daily" data-timeframe="daily" class="time-button__input" />
                 <span class="time-button--visual">Daily</span>
               </label>
-              
-              <label class="time-button" >
-              <input 
-                type="radio"
-                name="timeframe"
-                checked
-                value="weekly"
-                data-timeframe="weekly" 
-                class="time-button__input" 
-                />
+
+              <label class="time-button">
+                <input type="radio" name="timeframe" checked value="weekly" data-timeframe="weekly"
+                  class="time-button__input" />
                 <span class="time-button--visual">Weekly</span>
               </label>
 
               <label class="time-button">
-              <input 
-                type="radio"
-                name="timeframe"
-                value="monthly"
-                data-timeframe="monthly" 
-                class="time-button__input" 
-                />
+                <input type="radio" name="timeframe" value="monthly" data-timeframe="monthly"
+                  class="time-button__input" />
                 <span class="time-button--visual">Monthly</span>
               </label>
             </div>
-          </article>
+          </div>
         </li>
 
         <li class="card--work">
-          <article class="activity activity--work" data-activity="work">
+          <div class="activity activity--work" data-activity="work">
             <span class="activity__icon icon--work" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -85,18 +68,18 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true"> 
+              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
                 </p>
               </div>
             </div>
-          </article>
+          </div>
         </li>
 
         <li class="card--play">
-          <article class="activity activity--play" data-activity="play">
+          <div class="activity activity--play" data-activity="play">
             <span class="activity__icon icon--play" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -110,19 +93,19 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true"> 
+              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
                 </p>
               </div>
             </div>
-          </article>
+          </div>
 
         </li>
 
         <li class="card--study">
-<article class="activity activity--study" data-activity="study">
+          <div class="activity activity--study" data-activity="study">
             <span class="activity__icon icon--study" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -136,19 +119,19 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true"> 
+              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
                 </p>
               </div>
             </div>
-          </article>
+          </div>
 
         </li>
 
         <li class="card--exercise">
-         <article class="activity activity--exercise" data-activity="exercise">
+          <div class="activity activity--exercise" data-activity="exercise">
             <span class="activity__icon icon--exercise" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -162,18 +145,18 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true"> 
+              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
                 </p>
               </div>
             </div>
-          </article>
+          </div>
         </li>
 
         <li class="card--social">
-          <article class="activity activity--social" data-activity="social">
+          <div class="activity activity--social" data-activity="social">
             <span class="activity__icon icon--social" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -187,18 +170,18 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true"> 
+              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
                 </p>
+              </div>
             </div>
-          </article>
 
         </li>
 
         <li class="card--self-care">
-          <article class="activity activity--self-care" data-activity="self-care">
+          <div class="activity activity--self-care" data-activity="self-care">
             <span class="activity__icon icon--self-care" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -212,13 +195,13 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true"> 
+              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
                 </p>
+              </div>
             </div>
-          </article>
         </li>
 
       </ul>
