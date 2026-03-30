@@ -23,7 +23,7 @@
       <div id="timeframe-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
       <ul class="cards grid">
         <li class="card--main">
-          <aside class="profile-card">
+          <article class="profile-card">
             <header class="profile-card__info cluster box-lg">
               <img class="profile-card__avatar" height="234" width="234" src="/assets/images/image-jeremy.png"
                 alt="Jeremy Robson's avatar">
@@ -32,7 +32,8 @@
                 <h1 class="profile-card__name">Jeremy Robson</h1>
               </div>
             </header>
-            <div class="profile-card__time box-sm cluster-sm" role="radiogroup" aria-labelledby="timeframe-label">
+            <fieldset class="profile-card__time box-sm cluster-sm">
+              <legend class="sr-only">Timeframe</legend>
               <label class="time-button">
                 <input type="radio" name="timeframe" value="daily" data-timeframe="daily" class="time-button__input" />
                 <span class="time-button--visual">Daily</span>
@@ -49,8 +50,8 @@
                   class="time-button__input" />
                 <span class="time-button--visual">Monthly</span>
               </label>
-            </div>
-          </aside>
+            </fieldset>
+          </article>
         </li>
 
         <li class="card--work">

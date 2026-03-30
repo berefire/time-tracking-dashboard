@@ -52,7 +52,7 @@
   input,
   button,
   textarea,
-  select {
+  fieldset {
     font: inherit;
     padding: 0;
     border: none;
