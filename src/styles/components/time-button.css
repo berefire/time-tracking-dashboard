@@ -1,76 +1,91 @@
 @layer components {
-    .profile-card {
-        background-color: var(--bg-card);
-        border-radius: var(--br-card);
+  .profile-card {
+    background-color: var(--bg-card);
+    border-radius: var(--br-card);
+  }
+
+  .profile-card__info {
+    background-color: var(--bg-header);
+    border-radius: var(--br-card);
+  }
+
+  .profile-card__avatar {
+    block-size: var(--block-size-avatar);
+    inline-size: var(--inline-size-avatar);
+    border-radius: 50%;
+    border: 0.1875em solid var(--bg-border);
+  }
+
+  .profile-card__report {
+    font-size: var(--fs-report);
+    line-height: var(--lh-report);
+    font-weight: var(--fw-regular);
+    color: var(--fc-report);
+  }
+
+  .profile-card__name {
+    font-size: var(--fs-name);
+    line-height: var(--lh-name);
+    font-weight: var(--fw-light);
+  }
+
+  .time-button {
+    flex: 1;
+    text-align: center;
+  }
+
+  .time-button--visual {
+    display: inline-block;
+    inline-size: 100%;
+    font-size: var(--fs-time-button);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-time-button);
+    color: var(--fc-buttons);
+    cursor: pointer;
+  }
+
+  .time-button__input {
+    position: absolute;
+    opacity: 0;
+    inline-size: 0;
+    block-size: 0;
+  }
+
+  .time-button__input:checked + .time-button--visual {
+    color: var(--fc-button-selected);
+  }
+
+  .time-button__input:focus-visible + .time-button--visual {
+    outline: 0.125em solid Highlight;
+    outline-offset: 0.1875em;
+  }
+
+  .time-button:hover {
+    color: var(--fc-button-hover);
+  }
+
+  @media (min-width: 48em) {
+    .time-button {
+      flex: none;
     }
 
-    .profile-card__info {
-        background-color: var(--bg-header);
-        border-radius: var(--br-card);
-    }
-
-    .profile-card__avatar {
-        block-size: var(--block-size-avatar);
-        inline-size: var(--inline-size-avatar);
-        border-radius: 50%;
-        border: 0.1875em solid var(--bg-border);
-    }
-
-    .profile-card__report {
-        font-size: var(--fs-report);
-        line-height: var(--lh-report);
-        font-weight: var(--fw-regular);
-        color: var(--fc-report);
-    }
-
-    .profile-card__name {
-        font-size: var(--fs-name);
-        line-height: var(--lh-name);
-        font-weight: var(--fw-light);
-    }
-
-    .time-button__visual {
-        display: inline-block;
-        text-align: center;
+    .time-button--visual {
         inline-size: var(--inline-size-time-button);
-        block-size: var(--block-size-time-button);
-        font-size: var(--fs-time-button);
-        font-weight: var(--fw-regular);
-        line-height: var(--lh-time-button);
-        color: var(--fc-buttons);
-        cursor: pointer;
-    
+    }
+  }
+
+  @media (min-width: 64em) {
+    .time-button {
+        flex: 1;
+        text-align: start;
     }
 
-    .time-button__input {
-        position: absolute;
-        opacity: 0;
-        inline-size: 0;
-        block-size: 0;
+    .time-button--visual {
+        inline-size: 100%;
     }
 
-    [aria-checked="true"] + .time-button__visual {
-        color: var(--fc-button-selected);
+    .profile-card__details {
+      margin-block-end: calc(25 / var(--base) * 1rem); /* 36px */
     }
-
-    .time-button:hover {
-        color: var(--fc-button-hover);
-    }
-
-
-    @media (min-width: 64em) {
-        .time__button {
-            inline-size: max-content;
-        }
-        
-        .time-button__visual {
-            text-align: start;
-        }
-
-        .profile-card__details {
-            margin-block-end: calc(36 / var(--base-sizing) * 1rem); /* 36px */
-        }
-    }
-
-
+  }
 }

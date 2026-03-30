@@ -21,7 +21,7 @@
   <main class="cover">
     <section class="box-xl">
       <ul class="grid" id="dashboard">
-        <li>
+        <li class="card--main">
           <article class="profile-card">
             <header class="profile-card__info cluster box-lg">
               <img class="profile-card__avatar" height="234" width="234" src="/assets/images/image-jeremy.png"
@@ -31,7 +31,7 @@
                 <h1 class="profile-card__name">Jeremy Robson</h1>
               </div>
             </header>
-            <div class="profile-card__time box-sm cluster-sm" role="radiogroup">
+            <div class="profile-card__time box-sm cluster-sm" role="radiogroup" aria-label="Timeframe selection">
               <label class="time-button">
                 <input 
                 type="radio"
@@ -39,13 +39,12 @@
                 value="daily"
                 data-timeframe="daily" 
                 class="time-button__input" 
-                role="radio"
-                aria-checked="false" tabindex="-1" aria-label="View daily report"
+                aria-label="View daily report"
                 />
-                <span class="time-button__visual">Daily</span>
+                <span class="time-button--visual">Daily</span>
               </label>
               
-              <label class="time-button" aria-checked="true" tabindex="0" aria-label="View weekly report">
+              <label class="time-button" >
               <input 
                 type="radio"
                 name="timeframe"
@@ -53,36 +52,34 @@
                 value="weekly"
                 data-timeframe="weekly" 
                 class="time-button__input" 
-                role="radio" 
-                tabindex="0" 
-                aria-label="View weekly report"/>
-                <span class="time-button__visual">Weekly</span>
+                aria-label="View weekly report"
+                />
+                <span class="time-button--visual">Weekly</span>
               </label>
 
-              <label class="time-button" aria-checked="false" tabindex="-1" aria-label="View monthly report">
+              <label class="time-button">
               <input 
                 type="radio"
                 name="timeframe"
                 value="monthly"
                 data-timeframe="monthly" 
                 class="time-button__input" 
-                role="radio" aria-checked="false" 
-                tabindex="-1" 
+                aria-label="View monthly report"
                 />
-                <span class="time-button__visual">Monthly</span>
+                <span class="time-button--visual">Monthly</span>
               </label>
             </div>
           </article>
         </li>
 
-        <li>
+        <li class="card--work">
           <article class="activity activity--work" data-activity="work">
             <span class="activity__icon icon--work" aria-hidden="true">
             </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Work</h2>
-                <button class="activity-options__btn" aria-label="More options for Work activity">
+                <button type="button" class="activity-options__btn" aria-label="More options for Work activity">
                   <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -100,14 +97,14 @@
           </article>
         </li>
 
-        <li>
+        <li class="card--play">
           <article class="activity activity--play" data-activity="play">
             <span class="activity__icon icon--play" aria-hidden="true">
             </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Play</h2>
-                <button class="activity-options__btn" aria-label="More options for Play activity">
+                <button type="button" class="activity-options__btn" aria-label="More options for Play activity">
                   <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -126,14 +123,14 @@
 
         </li>
 
-        <li>
+        <li class="card--study">
 <article class="activity activity--study" data-activity="study">
             <span class="activity__icon icon--study" aria-hidden="true">
             </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Study</h2>
-                <button class="activity-options__btn" aria-label="More options for Study activity">
+                <button type="button" class="activity-options__btn" aria-label="More options for Study activity">
                   <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -152,14 +149,14 @@
 
         </li>
 
-        <li>
+        <li class="card--exercise">
          <article class="activity activity--exercise" data-activity="exercise">
             <span class="activity__icon icon--exercise" aria-hidden="true">
             </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Exercise</h2>
-                <button class="activity-options__btn" aria-label="More options for Exercise activity">
+                <button type="button" class="activity-options__btn" aria-label="More options for Exercise activity">
                   <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -177,14 +174,14 @@
           </article>
         </li>
 
-        <li>
+        <li class="card--social">
           <article class="activity activity--social" data-activity="social">
             <span class="activity__icon icon--social" aria-hidden="true">
             </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Social</h2>
-                <button class="activity-options__btn" aria-label="More options for Social activity">
+                <button type="button" class="activity-options__btn" aria-label="More options for Social activity">
                   <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -202,14 +199,14 @@
 
         </li>
 
-        <li>
+        <li class="card--self-care">
           <article class="activity activity--self-care" data-activity="self-care">
             <span class="activity__icon icon--self-care" aria-hidden="true">
             </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Self Care</h2>
-                <button class="activity-options__btn" aria-label="More options for Self Care activity">
+                <button type="button" class="activity-options__btn" aria-label="More options for Self Care activity">
                   <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"

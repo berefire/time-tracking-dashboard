@@ -5,8 +5,9 @@
 
   .icon--work {
     background-image: url("/assets/images/icon-work.svg");
-    background-position: 14.5em -0.7em;
+    background-position: right 1rem top -0.5rem;
     background-repeat: no-repeat;
+    background-size: 4.5rem
   }
 
   .activity--play {
@@ -15,8 +16,9 @@
 
   .icon--play {
     background-image: url("/assets/images/icon-play.svg");
-    background-position: 14.5em -0.3em;
+    background-position: right 1rem top -0.19rem;
     background-repeat: no-repeat;
+    background-size: 4.5rem;
   }
 
   .activity--study {
@@ -25,8 +27,9 @@
 
   .icon--study {
     background-image: url("/assets/images/icon-study.svg");
-    background-position: 14.5em -0.4em;
+    background-position: right 1rem top -0.2rem;
     background-repeat: no-repeat;
+    background-size: 4.5rem;
   }
 
   .activity--exercise {
@@ -35,8 +38,9 @@
 
   .icon--exercise {
     background-image: url("/assets/images/icon-exercise.svg");
-    background-position: 14.5em -0.05em;
+    background-position: right 1rem top 0rem;
     background-repeat: no-repeat;
+    background-size: 4.5rem;
   }
 
   .activity--social {
@@ -45,8 +49,9 @@
 
   .icon--social {
     background-image: url("/assets/images/icon-social.svg");
-    background-position: 15em -0.9em;
+    background-position: right 1rem top -0.8rem;
     background-repeat: no-repeat;
+    background-size: 4.5rem;
   }
 
   .activity--self-care {
@@ -55,71 +60,63 @@
 
   .icon--self-care {
     background-image: url("/assets/images/icon-self-care.svg");
-    background-position: 15.4em -0.7em;
+    background-position: right 1rem top -1rem;
     background-repeat: no-repeat;
+    background-size: 4.5rem;
   }
 
   @media (min-width: 48em) {
     .icon--work {
-      background-position: 7.5em -0.6em;
-      background-size: 3.8rem;
+      background-size: 3.5rem;
     }
 
     .icon--play {
-      background-position: 7em -0.4em;
-      background-size: 3.8rem;
+      background-size: 3.5rem;
+
     }
 
     .icon--study {
-      background-position: 7em -0.3em;
-      background-size: 3.8rem;
+      background-size: 3.5rem;
     }
 
     .icon--exercise {
-      background-position: 7.5em 0.05em;
-      background-size: 3.8rem;
+      background-size: 3.5rem;
     }
 
     .icon--social {
-      background-position: 7em -0.8em;
-      background-size: 3.8rem;
+      background-size: 3.5rem;
     }
 
     .icon--self-care {
-      background-position: 7em -1em;
-      background-size: 3.8rem;
+      background-position: right 1rem top -0.8rem;
+      background-size: 3.5rem;
     }
   }
-
-  @media (min-width: 64em) {
+    @media (min-width: 64em) {
     .icon--work {
-      background-position: 10.5em -0.6em;
-      background-size: 4.8rem;
+      background-size: 4.5rem;
     }
 
     .icon--play {
-      background-position: 10.2em -0.3em;
-      background-size: 4.8rem;
+      background-size: 4.5rem;
+
     }
 
     .icon--study {
-      background-position: 10.5em -0.3em;
-      background-size: 4.8rem;
+      background-size: 4.5rem;
     }
 
     .icon--exercise {
-      background-position: 10.5em 0.05em;
-      background-size: 4.8rem;
+      background-size: 4.5rem;
     }
 
     .icon--social {
-      background-position: 10.2em -0.8em;
-      background-size: 4.8rem;
+      background-size: 4.5rem;
     }
 
     .icon--self-care {
-      background-position: 10.5em -1em;
-      background-size: 4.8rem;
+      background-position: right 1rem top -0.8rem;
+      background-size: 4.5rem;
     }
   }
 }

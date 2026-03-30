@@ -8,6 +8,6 @@
     .activity__title {
         font-size: var(--fs-activity);
         font-weight: var(--fw-medium);
-        color: var(--lh-activity);
+        color: var(--fc-body);
     }
 }

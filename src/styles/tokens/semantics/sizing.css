@@ -21,7 +21,7 @@
 
     @media (min-width: 48em) {
         :root {
-            --max-inline-size-dashboard: var(--size-612);
+            --max-inline-size-dashboard: var(--size-640);
             --block-size-activity-figure: var(--size-33);
         }
     }
