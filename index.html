@@ -14,8 +14,8 @@
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <script type="module" crossorigin src="/time-tracking-dashboard/assets/index-CHqQFwQk.js"></script>
-  <link rel="stylesheet" crossorigin href="/time-tracking-dashboard/assets/index-CS1UwD0k.css">
+  <script type="module" crossorigin src="/time-tracking-dashboard/assets/index-BiRkpViG.js"></script>
+  <link rel="stylesheet" crossorigin href="/time-tracking-dashboard/assets/index-DJhZzFxQ.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       <div id="timeframe-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
       <ul class="cards grid">
         <li class="card--main">
-          <div class="profile-card">
+          <aside class="profile-card">
             <header class="profile-card__info cluster box-lg">
               <img class="profile-card__avatar" height="234" width="234" src="/time-tracking-dashboard/assets/images/image-jeremy.png"
                 alt="Jeremy Robson's avatar">
@@ -33,9 +33,7 @@
                 <h1 class="profile-card__name">Jeremy Robson</h1>
               </div>
             </header>
-            <h3 id="timeframe-label" class="sr-only">Timeframe selection</h3> 
             <div class="profile-card__time box-sm cluster-sm" role="radiogroup" aria-labelledby="timeframe-label">
-
               <label class="time-button">
                 <input type="radio" name="timeframe" value="daily" data-timeframe="daily" class="time-button__input" />
                 <span class="time-button--visual">Daily</span>
@@ -53,11 +51,11 @@
                 <span class="time-button--visual">Monthly</span>
               </label>
             </div>
-          </div>
+          </aside>
         </li>
 
         <li class="card--work">
-          <div class="activity activity--work" data-activity="work">
+          <article class="activity activity--work" data-activity="work">
             <span class="activity__icon icon--work" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -78,11 +76,11 @@
                 </p>
               </div>
             </div>
-          </div>
+          </article>
         </li>
 
         <li class="card--play">
-          <div class="activity activity--play" data-activity="play">
+          <article class="activity activity--play" data-activity="play">
             <span class="activity__icon icon--play" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -103,12 +101,12 @@
                 </p>
               </div>
             </div>
-          </div>
+          </article>
 
         </li>
 
         <li class="card--study">
-          <div class="activity activity--study" data-activity="study">
+          <article class="activity activity--study" data-activity="study">
             <span class="activity__icon icon--study" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -129,12 +127,12 @@
                 </p>
               </div>
             </div>
-          </div>
+          </article>
 
         </li>
 
         <li class="card--exercise">
-          <div class="activity activity--exercise" data-activity="exercise">
+          <article class="activity activity--exercise" data-activity="exercise">
             <span class="activity__icon icon--exercise" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -155,11 +153,11 @@
                 </p>
               </div>
             </div>
-          </div>
+          </article>
         </li>
 
         <li class="card--social">
-          <div class="activity activity--social" data-activity="social">
+          <article class="activity activity--social" data-activity="social">
             <span class="activity__icon icon--social" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -180,11 +178,11 @@
                 </p>
               </div>
             </div>
-
+          </article>
         </li>
 
         <li class="card--self-care">
-          <div class="activity activity--self-care" data-activity="self-care">
+          <article class="activity activity--self-care" data-activity="self-care">
             <span class="activity__icon icon--self-care" aria-hidden="true">
             </span>
             <div class="activity__details box">
@@ -205,6 +203,7 @@
                 </p>
               </div>
             </div>
+          </article>
         </li>
 
       </ul>
