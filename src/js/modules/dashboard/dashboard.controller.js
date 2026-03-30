@@ -1,19 +1,23 @@
 import { fetchDashboardData } from "./dashboard.service";
 import { state, setData, setTimeframe } from "./dashboard.state";
 import { render, initView } from "./dashboard.view";
+import { TIMEFRAME_LABELS } from "./dashboard.constants";
 
+
+function isValidTimeframe(value) {
+  return Object.prototype.hasOwnProperty.call(TIMEFRAME_LABELS, value);
+}
 
 function announceTimeframe(timeframe) {
-  const statusEl = document.getElementById('timeframe-status');
-  if (!statusEl) return;
+  const statusEl = document.getElementById("timeframe-status");
+  if (!isValidTimeframe(timeframe)) {
+    console.warn(`announceTimeframe: unexpected timeframe "${timeframe}"`);
+    // choose whether to early-return or announce a neutral message
+    statusEl.textContent = 'Timeframe changed.'; // less specific but always valid
+    return;
+  }
 
-  const labels = {
-    daily: 'Daily',
-    weekly: 'Weekly',
-    monthly: 'Monthly'
-  };
-
-  statusEl.textContent = `Timeframe set to ${labels[timeframe]}. Activity times updated.`;
+  statusEl.textContent = `Timeframe set to ${TIMEFRAME_LABELS[timeframe]}. Activity times updated.`;
 }
 
 export async function initDashboard() {
