@@ -15,7 +15,7 @@
     --size-109: calc(109 / var(--base) * 1rem);
     --size-327: calc(327 / var(--base) * 1rem);
     --size-520: calc(520 / var(--base) * 1rem);
-    --size-640: calc(612 / var(--base) * 1rem);
+    --size-640: calc(640 / var(--base) * 1rem);
     --size-1116: calc(1116 / var(--base) * 1rem);
   }
 }

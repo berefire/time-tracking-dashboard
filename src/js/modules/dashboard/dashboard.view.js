@@ -1,15 +1,19 @@
 import { ACTIVITY_MAP } from "./dashboard.mapper.js";
 
-const elements = Object.fromEntries(
+let elements = {};
+
+export function initView() {
+  elements = Object.fromEntries(
     [...document.querySelectorAll("[data-activity]")].map((card) => [
-        card.dataset.activity,
-        {
-            currentTime: card.querySelector('.activity__current-time'),
-            previousTime: card.querySelector('.activity__previous-time'),
-            labelTime: card.querySelector('.activity__previous-timeframe'),
-        }
+      card.dataset.activity,
+      {
+        currentTime: card.querySelector('.activity__current-time'),
+        previousTime: card.querySelector('.activity__previous-time'),
+        labelTime: card.querySelector('.activity__previous-timeframe'),
+      }
     ])
-);
+  );
+}
 
 const LABELS = {
     daily: "Yesterday",

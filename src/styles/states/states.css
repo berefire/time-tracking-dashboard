@@ -4,10 +4,8 @@
   }
 
   .icon--work {
+    --icon-pos-y: top -0.5rem;
     background-image: url("/assets/images/icon-work.svg");
-    background-position: right 1rem top -0.5rem;
-    background-repeat: no-repeat;
-    background-size: 4.5rem
   }
 
   .activity--play {
@@ -15,10 +13,8 @@
   }
 
   .icon--play {
+    --icon-pos-y: top -0.19rem;
     background-image: url("/assets/images/icon-play.svg");
-    background-position: right 1rem top -0.19rem;
-    background-repeat: no-repeat;
-    background-size: 4.5rem;
   }
 
   .activity--study {
@@ -26,10 +22,8 @@
   }
 
   .icon--study {
+    --icon-pos-y: top -0.2rem;
     background-image: url("/assets/images/icon-study.svg");
-    background-position: right 1rem top -0.2rem;
-    background-repeat: no-repeat;
-    background-size: 4.5rem;
   }
 
   .activity--exercise {
@@ -38,9 +32,6 @@
 
   .icon--exercise {
     background-image: url("/assets/images/icon-exercise.svg");
-    background-position: right 1rem top 0rem;
-    background-repeat: no-repeat;
-    background-size: 4.5rem;
   }
 
   .activity--social {
@@ -48,10 +39,8 @@
   }
 
   .icon--social {
+    --icon-pos-y: top -0.8rem;
     background-image: url("/assets/images/icon-social.svg");
-    background-position: right 1rem top -0.8rem;
-    background-repeat: no-repeat;
-    background-size: 4.5rem;
   }
 
   .activity--self-care {
@@ -59,64 +48,62 @@
   }
 
   .icon--self-care {
+    --icon-pos-y: top -1rem;
     background-image: url("/assets/images/icon-self-care.svg");
-    background-position: right 1rem top -1rem;
-    background-repeat: no-repeat;
-    background-size: 4.5rem;
   }
 
   @media (min-width: 48em) {
     .icon--work {
-      background-size: 3.5rem;
+      --icon-size: 3.5rem;
     }
 
     .icon--play {
-      background-size: 3.5rem;
+      --icon-size: 3.5rem;
 
     }
 
     .icon--study {
-      background-size: 3.5rem;
+      --icon-size: 3.5rem;
     }
 
     .icon--exercise {
-      background-size: 3.5rem;
+      --icon-size: 3.5rem;
     }
 
     .icon--social {
-      background-size: 3.5rem;
+      --icon-size: 3.5rem;
     }
 
     .icon--self-care {
-      background-position: right 1rem top -0.8rem;
-      background-size: 3.5rem;
+      --icon-pos-y: top -0.8rem;
+      --icon-size: 3.5rem;
     }
   }
     @media (min-width: 64em) {
     .icon--work {
-      background-size: 4.5rem;
+      --icon-size: 4.5rem;
     }
 
     .icon--play {
-      background-size: 4.5rem;
+      --icon-size: 4.5rem;
 
     }
 
     .icon--study {
-      background-size: 4.5rem;
+      --icon-size: 4.5rem;
     }
 
     .icon--exercise {
-      background-size: 4.5rem;
+      --icon-size: 4.5rem;
     }
 
     .icon--social {
-      background-size: 4.5rem;
+      --icon-size: 4.5rem;
     }
 
     .icon--self-care {
-      background-position: right 1rem top -0.8rem;
-      background-size: 4.5rem;
+      --icon-pos-y: top -0.8rem;
+      --icon-size: 4.5rem;
     }
   }
 }

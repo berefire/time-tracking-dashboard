@@ -17,6 +17,9 @@
     display: block;
     inline-size: 100%;
     block-size: var(--block-size-activity-figure);
+    background-repeat: no-repeat;           /* same for all icons */
+    background-size: var(--icon-size, 4.5rem);
+    background-position: var(--icon-pos-x, right 1rem) var(--icon-pos-y, top 0);
   }
 
   .activity__time-container {
