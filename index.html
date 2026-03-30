@@ -20,6 +20,7 @@
 <body>
   <main class="cover">
     <section class="dashboard box-xl">
+      <div id="timeframe-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
       <ul class="cards grid">
         <li class="card--main">
           <div class="profile-card">
@@ -31,7 +32,9 @@
                 <h1 class="profile-card__name">Jeremy Robson</h1>
               </div>
             </header>
-            <div class="profile-card__time box-sm cluster-sm" role="radiogroup" aria-label="Timeframe selection">
+            <h3 id="timeframe-label" class="sr-only">Timeframe selection</h3> 
+            <div class="profile-card__time box-sm cluster-sm" role="radiogroup" aria-labelledby="timeframe-label">
+
               <label class="time-button">
                 <input type="radio" name="timeframe" value="daily" data-timeframe="daily" class="time-button__input" />
                 <span class="time-button--visual">Daily</span>
@@ -67,7 +70,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
+              <div class="activity__time-container">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
@@ -92,7 +95,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
+              <div class="activity__time-container">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
@@ -118,7 +121,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
+              <div class="activity__time-container">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
@@ -144,7 +147,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
+              <div class="activity__time-container">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
@@ -169,7 +172,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
+              <div class="activity__time-container">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
@@ -194,7 +197,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="activity__time-container" aria-live="polite" aria-atomic="true">
+              <div class="activity__time-container">
                 <p class="activity__current-time"></p>
                 <p class="activity__time-stamp">
                   <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
