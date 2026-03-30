@@ -13,52 +13,10 @@
     cursor: pointer;
   }
 
-  .activity__figure {
-    block-size: var(--block-size-activity-figure);
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .activity__icon {
-    --position-x: calc(-17.42 / var(--base) * 1rem); /* 17.42px */
-    --position-y: calc(-10 / var(--base) * 1rem);
-
-    transform: translate(var(--position-x), var(--position-y));
-
-    inline-size: var(--inline-size-icon, 60px);
-    block-size: var(--block-size-icon, 60px);
-  }
-
-  .icon-work,
-  .icon-study {
-    --inline-size-icon: var(--inline-size-icon-work);
-    --block-size-icon: var(--block-size-icon-work);
-  }
-
-  .icon-play {
-    --inline-size-icon: var(--inline-size-icon-play);
-    --block-size-icon: var(--block-size-icon-play);
-  }
-
-  .icon-exercise {
-    --position-y: calc(-1 / var(--base) * 1rem);
-
-    --inline-size-icon: var(--inline-size-icon-exercise);
-    --block-size-icon: var(--block-size-icon-exercise);
-  }
-
-  .icon-social {
-    --position-y: calc(-15 / var(--base) * 1rem);
-    --inline-size-icon: calc(73.6 / var(--base) * 1rem);
-    --block-size-icon: var(--block-size-icon-social);
-  }
-
-  .icon-self-care {
-    --position-y: calc(-12 / var(--base) * 1rem);
-
-    --inline-size-icon: var(--inline-size-icon-self-care);
-    --block-size-icon: var(--block-size-icon-self-care);
+    display: block;
+    inline-size: 100%;
+    block-size: var(--block-size-activity-figure);
   }
 
   .activity__time-container {
@@ -84,71 +42,5 @@
       flex-direction: column;
       align-items: flex-start;
     }
-
-    .icon-work,
-    .icon-study {
-      --inline-size-icon: calc(57.48 / var(--base) * 1rem);
-      --block-size-icon: calc(57.48 / var(--base) * 1rem);
-    }
-
-    .icon-play {
-      --inline-size-icon: calc(66.33 / var(--base) * 1rem);
-      --block-size-icon: calc(66.33 / var(--base) * 1rem);
-    }
-
-    .icon-exercise {
-      --inline-size-icon: calc(58.7 / var(--base) * 1rem);
-      --block-size-icon: calc(39.41 / var(--base) * 1rem);
-    }
-
-    .icon-social {
-      --position-y: calc(-10 / var(--base) * 1rem);
-
-      --inline-size-icon: calc(54.24 / var(--base) * 1rem);
-      --block-size-icon: calc(73.7 / var(--base) * 1rem);
-    }
-
-    .icon-self-care {
-      --inline-size-icon: calc(53.06 / var(--base) * 1rem);
-      --block-size-icon: calc(48.64 / var(--base) * 1rem);
-    }
   }
-
-  @media(min-width: 64em) {
-     .icon-work,
-  .icon-study {
-    --position-y: calc(-12 / var(--base) * 1rem);
-
-    --inline-size-icon: var(--inline-size-icon-work);
-    --block-size-icon: var(--block-size-icon-work);
-  }
-
-  .icon-play {
-    --position-y: calc(-6 / var(--base) * 1rem);
-
-    --inline-size-icon: calc(79.95 / var(--base) * 1rem);
-    --block-size-icon: calc(70.5 / var(--base) * 1rem);
-  }
-
-  .icon-exercise {
-    --position-y: calc(-1 / var(--base) * 1rem);
-
-    --inline-size-icon: calc(79.65 / var(--base) * 1rem);
-    --block-size-icon: calc(53.48 / var(--base) * 1rem);
-  }
-
-  .icon-social {
-    --position-y: calc(-15 / var(--base) * 1rem);
-
-    --inline-size-icon: calc(73.6 / var(--base) * 1rem);
-    --block-size-icon: calc(90.5 / var(--base) * 1rem);
-  }
-
-  .icon-self-care {
-    --position-y: calc(-12 / var(--base) * 1rem);
-
-    --inline-size-icon: var(--inline-size-icon-self-care);
-    --block-size-icon: var(--block-size-icon-self-care);
-  }
-}
 }

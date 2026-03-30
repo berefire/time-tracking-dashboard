@@ -29,16 +29,27 @@
         font-weight: var(--fw-light);
     }
 
-    .time-button {
+    .time-button__visual {
+        display: inline-block;
+        text-align: center;
         inline-size: var(--inline-size-time-button);
         block-size: var(--block-size-time-button);
         font-size: var(--fs-time-button);
         font-weight: var(--fw-regular);
         line-height: var(--lh-time-button);
         color: var(--fc-buttons);
+        cursor: pointer;
+    
     }
 
-    .time-button[aria-checked="true"] {
+    .time-button__input {
+        position: absolute;
+        opacity: 0;
+        inline-size: 0;
+        block-size: 0;
+    }
+
+    [aria-checked="true"] + .time-button__visual {
         color: var(--fc-button-selected);
     }
 
@@ -48,8 +59,12 @@
 
 
     @media (min-width: 64em) {
-        .time-button {
+        .time__button {
             inline-size: max-content;
+        }
+        
+        .time-button__visual {
+            text-align: start;
         }
 
         .profile-card__details {

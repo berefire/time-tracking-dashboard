@@ -32,19 +32,53 @@
               </div>
             </header>
             <div class="profile-card__time box-sm cluster-sm" role="radiogroup">
-              <button data-timeframe="daily" class="time-button" role="radio" aria-checked="false" tabindex="-1" aria-label="View daily report">Daily</button>
-              <button data-timeframe="weekly" class="time-button" role="radio" aria-checked="true" tabindex="0" aria-label="View weekly report">Weekly</button>
-              <button data-timeframe="monthly" class="time-button" role="radio" aria-checked="false" tabindex="-1" aria-label="View monthly report">Monthly</button>
+              <label class="time-button">
+                <input 
+                type="radio"
+                name="timeframe"
+                value="daily"
+                data-timeframe="daily" 
+                class="time-button__input" 
+                role="radio"
+                aria-checked="false" tabindex="-1" aria-label="View daily report"
+                />
+                <span class="time-button__visual">Daily</span>
+              </label>
+              
+              <label class="time-button" aria-checked="true" tabindex="0" aria-label="View weekly report">
+              <input 
+                type="radio"
+                name="timeframe"
+                checked
+                value="weekly"
+                data-timeframe="weekly" 
+                class="time-button__input" 
+                role="radio" 
+                tabindex="0" 
+                aria-label="View weekly report"/>
+                <span class="time-button__visual">Weekly</span>
+              </label>
+
+              <label class="time-button" aria-checked="false" tabindex="-1" aria-label="View monthly report">
+              <input 
+                type="radio"
+                name="timeframe"
+                value="monthly"
+                data-timeframe="monthly" 
+                class="time-button__input" 
+                role="radio" aria-checked="false" 
+                tabindex="-1" 
+                />
+                <span class="time-button__visual">Monthly</span>
+              </label>
             </div>
           </article>
         </li>
 
         <li>
           <article class="activity activity--work" data-activity="work">
-            <figure class="activity__figure">
-              <img class="activity__icon icon-work" height="60" width="60" src="/assets/images/icon-work.svg" alt=""
-                aria-hidden="true">
-            </figure>
+            <span class="activity__icon icon--work" aria-hidden="true">
+            </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Work</h2>
@@ -68,10 +102,8 @@
 
         <li>
           <article class="activity activity--play" data-activity="play">
-            <figure class="activity__figure">
-              <img class="activity__icon icon-play" height="60" width="60" src="/assets/images/icon-play.svg" alt=""
-                aria-hidden="true">
-            </figure>
+            <span class="activity__icon icon--play" aria-hidden="true">
+            </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Play</h2>
@@ -96,10 +128,8 @@
 
         <li>
 <article class="activity activity--study" data-activity="study">
-            <figure class="activity__figure">
-              <img class="activity__icon icon-study" height="60" width="60" src="/assets/images/icon-study.svg" alt=""
-                aria-hidden="true">
-            </figure>
+            <span class="activity__icon icon--study" aria-hidden="true">
+            </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Study</h2>
@@ -124,10 +154,8 @@
 
         <li>
          <article class="activity activity--exercise" data-activity="exercise">
-            <figure class="activity__figure">
-              <img class="activity__icon icon-exercise" height="60" width="60" src="/assets/images/icon-exercise.svg" alt=""
-                aria-hidden="true">
-            </figure>
+            <span class="activity__icon icon--exercise" aria-hidden="true">
+            </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Exercise</h2>
@@ -151,10 +179,8 @@
 
         <li>
           <article class="activity activity--social" data-activity="social">
-            <figure class="activity__figure">
-              <img class="activity__icon icon-social" height="60" width="60" src="/assets/images/icon-social.svg" alt=""
-                aria-hidden="true">
-            </figure>
+            <span class="activity__icon icon--social" aria-hidden="true">
+            </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Social</h2>
@@ -178,10 +204,8 @@
 
         <li>
           <article class="activity activity--self-care" data-activity="self-care">
-            <figure class="activity__figure">
-              <img class="activity__icon icon-self-care" height="60" width="60" src="/assets/images/icon-self-care.svg" alt=""
-                aria-hidden="true">
-            </figure>
+            <span class="activity__icon icon--self-care" aria-hidden="true">
+            </span>
             <div class="activity__details box">
               <div class="activity__title-container">
                 <h2 class="activity__title">Self Care</h2>

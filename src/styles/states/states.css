@@ -3,23 +3,123 @@
     background-color: var(--bg-card--work);
   }
 
+  .icon--work {
+    background-image: url("/assets/images/icon-work.svg");
+    background-position: 14.5em -0.7em;
+    background-repeat: no-repeat;
+  }
+
   .activity--play {
     background-color: var(--bg-card--play);
+  }
+
+  .icon--play {
+    background-image: url("/assets/images/icon-play.svg");
+    background-position: 14.5em -0.3em;
+    background-repeat: no-repeat;
   }
 
   .activity--study {
     background-color: var(--bg-card--study);
   }
 
+  .icon--study {
+    background-image: url("/assets/images/icon-study.svg");
+    background-position: 14.5em -0.4em;
+    background-repeat: no-repeat;
+  }
+
   .activity--exercise {
     background-color: var(--bg-card--exercise);
+  }
+
+  .icon--exercise {
+    background-image: url("/assets/images/icon-exercise.svg");
+    background-position: 14.5em -0.05em;
+    background-repeat: no-repeat;
   }
 
   .activity--social {
     background-color: var(--bg-card--social);
   }
 
+  .icon--social {
+    background-image: url("/assets/images/icon-social.svg");
+    background-position: 15em -0.9em;
+    background-repeat: no-repeat;
+  }
+
   .activity--self-care {
     background-color: var(--bg-card--self-care);
+  }
+
+  .icon--self-care {
+    background-image: url("/assets/images/icon-self-care.svg");
+    background-position: 15.4em -0.7em;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 48em) {
+    .icon--work {
+      background-position: 7.5em -0.6em;
+      background-size: 3.8rem;
+    }
+
+    .icon--play {
+      background-position: 7em -0.4em;
+      background-size: 3.8rem;
+    }
+
+    .icon--study {
+      background-position: 7em -0.3em;
+      background-size: 3.8rem;
+    }
+
+    .icon--exercise {
+      background-position: 7.5em 0.05em;
+      background-size: 3.8rem;
+    }
+
+    .icon--social {
+      background-position: 7em -0.8em;
+      background-size: 3.8rem;
+    }
+
+    .icon--self-care {
+      background-position: 7em -1em;
+      background-size: 3.8rem;
+    }
+  }
+
+  @media (min-width: 64em) {
+    .icon--work {
+      background-position: 10.5em -0.6em;
+      background-size: 4.8rem;
+    }
+
+    .icon--play {
+      background-position: 10.2em -0.3em;
+      background-size: 4.8rem;
+    }
+
+    .icon--study {
+      background-position: 10.5em -0.3em;
+      background-size: 4.8rem;
+    }
+
+    .icon--exercise {
+      background-position: 10.5em 0.05em;
+      background-size: 4.8rem;
+    }
+
+    .icon--social {
+      background-position: 10.2em -0.8em;
+      background-size: 4.8rem;
+    }
+
+    .icon--self-care {
+      background-position: 10.5em -1em;
+      background-size: 4.8rem;
+    }
   }
 }

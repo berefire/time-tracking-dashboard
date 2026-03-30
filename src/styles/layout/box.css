@@ -19,4 +19,10 @@
             padding: 0;
         }
     }
+
+    @media(min-width: 64em) {
+        .box-sm {
+            padding-inline: var(--padding-profile-card__time-buttons);
+        }
+    }
 }
