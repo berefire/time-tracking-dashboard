@@ -70,7 +70,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-modular-js-and-cube-css--XakK8uyRt](https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-modular-js-and-cube-css--XakK8uyRt)
 - Live Site URL: [https://berefire.github.io/time-tracking-dashboard/](https://berefire.github.io/time-tracking-dashboard/)
 
 ---
