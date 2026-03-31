@@ -14,200 +14,190 @@
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <script type="module" crossorigin src="/time-tracking-dashboard/assets/index-DbRD97Vi.js"></script>
-  <link rel="stylesheet" crossorigin href="/time-tracking-dashboard/assets/index-keSVoOrS.css">
+  <script type="module" crossorigin src="/time-tracking-dashboard/assets/index-B3sXcY3o.js"></script>
+  <link rel="stylesheet" crossorigin href="/time-tracking-dashboard/assets/index-CWXPlnRJ.css">
 </head>
 
 <body>
   <main class="cover">
-    <section class="dashboard box-xl">
+    <section class="box-xl grid" aria-labelledby="dashboard-heading">
+      <h1 id="dashboard-heading" class="sr-only">Time Tracking Dashboard</h1>
       <div id="timeframe-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
-      <ul class="cards grid">
-        <li class="card--main">
-          <article class="profile-card">
-            <header class="profile-card__info cluster box-lg">
-              <img class="profile-card__avatar" height="234" width="234" src="/time-tracking-dashboard/assets/images/image-jeremy.png"
-                alt="Jeremy Robson's avatar">
-              <div class="profile-card__details">
-                <p class="profile-card__report">Report for</p>
-                <h1 class="profile-card__name">Jeremy Robson</h1>
-              </div>
-            </header>
-            <fieldset class="profile-card__time box-sm cluster-sm">
-              <legend class="sr-only">Timeframe</legend>
-              <label class="time-button">
-                <input type="radio" name="timeframe" value="daily" data-timeframe="daily" class="time-button__input" />
-                <span class="time-button--visual">Daily</span>
-              </label>
 
-              <label class="time-button">
-                <input type="radio" name="timeframe" checked value="weekly" data-timeframe="weekly"
-                  class="time-button__input" />
-                <span class="time-button--visual">Weekly</span>
-              </label>
+      <article class="profile-card card--main">
+        <header class="profile-card__info cluster box-lg">
+          <img class="profile-card__avatar" height="234" width="234" src="/time-tracking-dashboard/assets/images/image-jeremy.png"
+            alt="Jeremy Robson's avatar">
+          <div class="profile-card__details">
+            <p class="profile-card__report">Report for</p>
+            <h2 class="profile-card__name">Jeremy Robson</h2>
+          </div>
+        </header>
+        <fieldset class="profile-card__time box-sm cluster-sm">
+          <legend class="sr-only">Timeframe</legend>
+          <label class="time-button">
+            <input type="radio" name="timeframe" value="daily" class="time-button__input" />
+            <span class="time-button--visual">Daily</span>
+          </label>
 
-              <label class="time-button">
-                <input type="radio" name="timeframe" value="monthly" data-timeframe="monthly"
-                  class="time-button__input" />
-                <span class="time-button--visual">Monthly</span>
-              </label>
-            </fieldset>
-          </article>
-        </li>
+          <label class="time-button">
+            <input type="radio" name="timeframe" checked value="weekly"
+              class="time-button__input" />
+            <span class="time-button--visual">Weekly</span>
+          </label>
 
-        <li class="card--work">
-          <article class="activity activity--work" data-activity="work">
-            <span class="activity__icon icon--work" aria-hidden="true">
-            </span>
-            <div class="activity__details box">
-              <div class="activity__title-container">
-                <h2 class="activity__title">Work</h2>
-                <button type="button" class="activity-options__btn" aria-label="More options for Work activity">
-                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                      fill="#BBC0FF" fill-rule="evenodd" />
-                  </svg>
-                </button>
-              </div>
-              <div class="activity__time-container">
-                <p class="activity__current-time"></p>
-                <p class="activity__time-stamp">
-                  <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
+          <label class="time-button">
+            <input type="radio" name="timeframe" value="monthly" class="time-button__input" />
+            <span class="time-button--visual">Monthly</span>
+          </label>
+        </fieldset>
+      </article>
 
-        <li class="card--play">
-          <article class="activity activity--play" data-activity="play">
-            <span class="activity__icon icon--play" aria-hidden="true">
-            </span>
-            <div class="activity__details box">
-              <div class="activity__title-container">
-                <h2 class="activity__title">Play</h2>
-                <button type="button" class="activity-options__btn" aria-label="More options for Play activity">
-                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                      fill="#BBC0FF" fill-rule="evenodd" />
-                  </svg>
-                </button>
+      <section class="activities">
+        <h2 class="sr-only">Recent Activities</h2>
+        <ul class="activities">
+          <li class="activity activity--work" data-activity="work">
+              <span class="activity__icon icon--work" aria-hidden="true">
+              </span>
+              <div class="activity__details box">
+                <div class="activity__title-container">
+                  <h3 class="activity__title">Work</h3>
+                  <button type="button" class="activity-options__btn" aria-label="More options for Work activity">
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill="#BBC0FF" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="activity__time-container">
+                  <p class="activity__current-time"></p>
+                  <p class="activity__time-stamp">
+                    <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
+                  </p>
+                </div>
               </div>
-              <div class="activity__time-container">
-                <p class="activity__current-time"></p>
-                <p class="activity__time-stamp">
-                  <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
-                </p>
-              </div>
-            </div>
-          </article>
+          </li>
 
-        </li>
+          <li class="activity activity--play" data-activity="play">
+              <span class="activity__icon icon--play" aria-hidden="true">
+              </span>
+              <div class="activity__details box">
+                <div class="activity__title-container">
+                  <h3 class="activity__title">Play</h3>
+                  <button type="button" class="activity-options__btn" aria-label="More options for Play activity">
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill="#BBC0FF" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="activity__time-container">
+                  <p class="activity__current-time"></p>
+                  <p class="activity__time-stamp">
+                    <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
+                  </p>
+                </div>
+              </div>
+          </li>
 
-        <li class="card--study">
-          <article class="activity activity--study" data-activity="study">
-            <span class="activity__icon icon--study" aria-hidden="true">
-            </span>
-            <div class="activity__details box">
-              <div class="activity__title-container">
-                <h2 class="activity__title">Study</h2>
-                <button type="button" class="activity-options__btn" aria-label="More options for Study activity">
-                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                      fill="#BBC0FF" fill-rule="evenodd" />
-                  </svg>
-                </button>
+          <li class="activity activity--study" data-activity="study">
+              <span class="activity__icon icon--study" aria-hidden="true">
+              </span>
+              <div class="activity__details box">
+                <div class="activity__title-container">
+                  <h3 class="activity__title">Study</h3>
+                  <button type="button" class="activity-options__btn" aria-label="More options for Study activity">
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill="#BBC0FF" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="activity__time-container">
+                  <p class="activity__current-time"></p>
+                  <p class="activity__time-stamp">
+                    <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
+                  </p>
+                </div>
               </div>
-              <div class="activity__time-container">
-                <p class="activity__current-time"></p>
-                <p class="activity__time-stamp">
-                  <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
-                </p>
-              </div>
-            </div>
-          </article>
+          </li>
 
-        </li>
+          <li class="activity activity--exercise" data-activity="exercise">
+              <span class="activity__icon icon--exercise" aria-hidden="true">
+              </span>
+              <div class="activity__details box">
+                <div class="activity__title-container">
+                  <h3 class="activity__title">Exercise</h3>
+                  <button type="button" class="activity-options__btn" aria-label="More options for Exercise activity">
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill="#BBC0FF" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="activity__time-container">
+                  <p class="activity__current-time"></p>
+                  <p class="activity__time-stamp">
+                    <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
+                  </p>
+                </div>
+              </div>
+          </li>
 
-        <li class="card--exercise">
-          <article class="activity activity--exercise" data-activity="exercise">
-            <span class="activity__icon icon--exercise" aria-hidden="true">
-            </span>
-            <div class="activity__details box">
-              <div class="activity__title-container">
-                <h2 class="activity__title">Exercise</h2>
-                <button type="button" class="activity-options__btn" aria-label="More options for Exercise activity">
-                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                      fill="#BBC0FF" fill-rule="evenodd" />
-                  </svg>
-                </button>
+          <li class="activity activity--social" data-activity="social">
+              <span class="activity__icon icon--social" aria-hidden="true">
+              </span>
+              <div class="activity__details box">
+                <div class="activity__title-container">
+                  <h3 class="activity__title">Social</h3>
+                  <button type="button" class="activity-options__btn" aria-label="More options for Social activity">
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill="#BBC0FF" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="activity__time-container">
+                  <p class="activity__current-time"></p>
+                  <p class="activity__time-stamp">
+                    <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
+                  </p>
+                </div>
               </div>
-              <div class="activity__time-container">
-                <p class="activity__current-time"></p>
-                <p class="activity__time-stamp">
-                  <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="card--social">
-          <article class="activity activity--social" data-activity="social">
-            <span class="activity__icon icon--social" aria-hidden="true">
-            </span>
-            <div class="activity__details box">
-              <div class="activity__title-container">
-                <h2 class="activity__title">Social</h2>
-                <button type="button" class="activity-options__btn" aria-label="More options for Social activity">
-                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                      fill="#BBC0FF" fill-rule="evenodd" />
-                  </svg>
-                </button>
+          <li class="activity activity--self-care" data-activity="self-care">
+              <span class="activity__icon icon--self-care" aria-hidden="true">
+              </span>
+              <div class="activity__details box">
+                <div class="activity__title-container">
+                  <h3 class="activity__title">Self Care</h3>
+                  <button type="button" class="activity-options__btn" aria-label="More options for Self Care activity">
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill="#BBC0FF" fill-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="activity__time-container">
+                  <p class="activity__current-time"></p>
+                  <p class="activity__time-stamp">
+                    <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
+                  </p>
+                </div>
               </div>
-              <div class="activity__time-container">
-                <p class="activity__current-time"></p>
-                <p class="activity__time-stamp">
-                  <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
+          </li>
+        </ul>
+      </section>
 
-        <li class="card--self-care">
-          <article class="activity activity--self-care" data-activity="self-care">
-            <span class="activity__icon icon--self-care" aria-hidden="true">
-            </span>
-            <div class="activity__details box">
-              <div class="activity__title-container">
-                <h2 class="activity__title">Self Care</h2>
-                <button type="button" class="activity-options__btn" aria-label="More options for Self Care activity">
-                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-                      fill="#BBC0FF" fill-rule="evenodd" />
-                  </svg>
-                </button>
-              </div>
-              <div class="activity__time-container">
-                <p class="activity__current-time"></p>
-                <p class="activity__time-stamp">
-                  <span class="activity__previous-timeframe"></span> - <span class="activity__previous-time"></span>
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
 
-      </ul>
+
 
 
     </section>
