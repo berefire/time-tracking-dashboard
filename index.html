@@ -23,13 +23,13 @@
       <h1 id="dashboard-heading" class="sr-only">Time Tracking Dashboard</h1>
       <div id="timeframe-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
-      <section class="profile-card card--main" aria-labelledby="profile-heading">
-        <header id="profile-heading" class="profile-card__info cluster box-lg">
+      <article class="profile-card card--main" aria-labelledby="profile-heading">
+        <header class="profile-card__info cluster box-lg">
           <img class="profile-card__avatar" height="234" width="234" src="/assets/images/image-jeremy.png"
             alt="Jeremy Robson's avatar">
           <div class="profile-card__details">
             <p class="profile-card__report">Report for</p>
-            <h2 class="profile-card__name">Jeremy Robson</h2>
+            <h2 id="profile-heading" class="profile-card__name">Jeremy Robson</h2>
           </div>
         </header>
         <fieldset class="profile-card__time box-sm cluster-sm">
@@ -49,19 +49,19 @@
             <span class="time-button--visual">Monthly</span>
           </label>
         </fieldset>
-      </section>
+      </article>
 
       <section class="activities" aria-labelledby="activities-label">
         <h2 id="activities-label" class="sr-only">Recent Activities</h2>
         <ul class="activities__list">
           <li class="activity activity--work" data-activity="work">
-            <section class="activity__card" aria-labelledby="activity-work-title">
+            <article class="activity__card" aria-labelledby="activity-work-title">
               <span class="activity__icon icon--work" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
                   <h3 class="activity__title" id="activity-work-title">Work</h3>
-                  <button type="button" class="activity-options__btn" aria-label="More options for Work activity">
+                  <button type="button" class="activity-options__btn" aria-label="More options for Work">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -76,17 +76,17 @@
                   </p>
                 </div>
               </div>
-            </section>
+            </article>
           </li>
 
           <li class="activity activity--play" data-activity="play">
-            <section class="activity__card" aria-labelledby="activity-play-title">
+            <article class="activity__card" aria-labelledby="activity-play-title">
               <span class="activity__icon icon--play" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
                   <h3 class="activity__title" id="activity-play-title">Play</h3>
-                  <button type="button" class="activity-options__btn" aria-label="More options for Play activity">
+                  <button type="button" class="activity-options__btn" aria-label="More options for Play">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -101,17 +101,17 @@
                   </p>
                 </div>
               </div>
-            </section>
+            </article>
           </li>
 
           <li class="activity activity--study" data-activity="study">
-            <section class="activity__card" aria-labelledby="activity-study-title">
+            <article class="activity__card" aria-labelledby="activity-study-title">
               <span class="activity__icon icon--study" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
                   <h3 class="activity__title" id="activity-study-title">Study</h3>
-                  <button type="button" class="activity-options__btn" aria-label="More options for Study activity">
+                  <button type="button" class="activity-options__btn" aria-label="More options for Study">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -126,17 +126,17 @@
                   </p>
                 </div>
               </div>
-            </section>
+            </article>
           </li>
 
           <li class="activity activity--exercise" data-activity="exercise">
-            <section class="activity__card" aria-labelledby="activity-exercise-title">
+            <article class="activity__card" aria-labelledby="activity-exercise-title">
               <span class="activity__icon icon--exercise" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
                   <h3 class="activity__title" id="activity-exercise-title">Exercise</h3>
-                  <button type="button" class="activity-options__btn" aria-label="More options for Exercise activity">
+                  <button type="button" class="activity-options__btn" aria-label="More options for Exercise">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -151,17 +151,17 @@
                   </p>
                 </div>
               </div>
-            </section>
+            </article>
           </li>
 
           <li class="activity activity--social" data-activity="social">
-            <section class="activity__card" aria-labelledby="activity-social-title">
+            <article class="activity__card" aria-labelledby="activity-social-title">
               <span class="activity__icon icon--social" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
                   <h3 class="activity__title" id="activity-social-title">Social</h3>
-                  <button type="button" class="activity-options__btn" aria-label="More options for Social activity">
+                  <button type="button" class="activity-options__btn" aria-label="More options for Social">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -176,17 +176,17 @@
                   </p>
                 </div>
               </div>
-            </section>
+            </article>
           </li>
 
           <li class="activity activity--self-care" data-activity="self-care">
-            <section class="activity__card" aria-labelledby="activity-self-care-title">
+            <article class="activity__card" aria-labelledby="activity-self-care-title">
               <span class="activity__icon icon--self-care" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
                   <h3 class="activity__title" id="activity-self-care-title">Self Care</h3>
-                  <button type="button" class="activity-options__btn" aria-label="More options for Self Care activity">
+                  <button type="button" class="activity-options__btn" aria-label="More options for Self Care">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -201,7 +201,7 @@
                   </p>
                 </div>
               </div>
-            </section>
+            </article>
           </li>
         </ul>
       </section>
