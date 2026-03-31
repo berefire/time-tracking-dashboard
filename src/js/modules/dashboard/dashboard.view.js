@@ -5,7 +5,7 @@ let elements = {};
 export function initView() {
   // Build a safe map of elements and throw helpful errors in dev
   elements = Object.fromEntries(
-    [...document.querySelectorAll("[data-activity]")].map((card) => {
+    [...document.querySelectorAll(".activity[data-activity]")].map((card) => {
       const key = card.dataset.activity;
       const current = card.querySelector(".activity__current-time"); // may be null
       const previous = card.querySelector(".activity__previous-time");

@@ -14,25 +14,29 @@
     row-gap: var(--gap-profile-card);
   }
 
+  .activities {
+    display: contents;
+  }
+
   .card--main {
     grid-area: main-card;
   }
-  .card--work {
+  .activity--work {
     grid-area: work-card;
   }
-  .card--play {
+  .activity--play {
     grid-area: play-card;
   }
-  .card--study {
+  .activity--study {
     grid-area: study-card;
   }
-  .card--exercise {
+  .activity--exercise {
     grid-area: exercise-card;
   }
-  .card--social {
+  .activity--social {
     grid-area: social-card;
   }
-  .card--self-care {
+  .activity--self-care {
     grid-area: self-care-card;
   }
 }
