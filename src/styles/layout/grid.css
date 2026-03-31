@@ -5,50 +5,28 @@
     grid-template-columns: 1fr;
     grid-template-areas:
       "main-card"
-      "work-card"
-      "play-card"
-      "study-card"
-      "exercise-card"
-      "social-card"
-      "self-care-card";
+      "activities";
     row-gap: var(--gap-profile-card);
-  }
-
-  .activities {
-    display: contents;
   }
 
   .card--main {
     grid-area: main-card;
   }
-  .activity--work {
-    grid-area: work-card;
+ 
+  .activities {
+    grid-area: activities;
   }
-  .activity--play {
-    grid-area: play-card;
-  }
-  .activity--study {
-    grid-area: study-card;
-  }
-  .activity--exercise {
-    grid-area: exercise-card;
-  }
-  .activity--social {
-    grid-area: social-card;
-  }
-  .activity--self-care {
-    grid-area: self-care-card;
+
+  .activities__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: var(--gap-profile-card);
   }
 }
 
 @media (min-width: 48em) {
-  .grid {
-    display: grid;
+  .activities__list {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "main-card main-card main-card"
-      "work-card play-card study-card"
-      "exercise-card social-card self-care-card";
     column-gap: var(--gap-profile-card);
   }
 }
@@ -56,8 +34,9 @@
 @media (min-width: 64em) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: var(--gap-profile-card);
     grid-template-areas:
-      "main-card work-card play-card study-card"
-      "main-card exercise-card social-card self-care-card";
+      "main-card activities activities activities"
+      "main-card activities activities activities";
   }
 }

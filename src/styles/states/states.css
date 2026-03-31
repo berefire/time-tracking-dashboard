@@ -53,57 +53,21 @@
   }
 
   @media (min-width: 48em) {
-    .icon--work {
-      --icon-size: 3.5rem;
-    }
-
-    .icon--play {
-      --icon-size: 3.5rem;
-
-    }
-
-    .icon--study {
-      --icon-size: 3.5rem;
-    }
-
-    .icon--exercise {
-      --icon-size: 3.5rem;
-    }
-
-    .icon--social {
+    .icon--work, .icon--play, .icon--study, .icon--exercise, .icon--social, .icon--self-care {
       --icon-size: 3.5rem;
     }
 
     .icon--self-care {
       --icon-pos-y: top -0.8rem;
-      --icon-size: 3.5rem;
     }
   }
     @media (min-width: 64em) {
-    .icon--work {
-      --icon-size: 4.5rem;
-    }
-
-    .icon--play {
-      --icon-size: 4.5rem;
-
-    }
-
-    .icon--study {
-      --icon-size: 4.5rem;
-    }
-
-    .icon--exercise {
-      --icon-size: 4.5rem;
-    }
-
-    .icon--social {
+    .icon--work, .icon--play, .icon--study, .icon--exercise, .icon--social, .icon--self-care {
       --icon-size: 4.5rem;
     }
 
     .icon--self-care {
       --icon-pos-y: top -0.8rem;
-      --icon-size: 4.5rem;
     }
   }
 }

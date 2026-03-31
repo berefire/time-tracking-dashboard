@@ -40,8 +40,7 @@
           </label>
 
           <label class="time-button">
-            <input type="radio" name="timeframe" checked value="weekly"
-              class="time-button__input" />
+            <input type="radio" name="timeframe" checked value="weekly" class="time-button__input" />
             <span class="time-button--visual">Weekly</span>
           </label>
 
@@ -52,15 +51,16 @@
         </fieldset>
       </article>
 
-      <section class="activities">
-        <h2 class="sr-only">Recent Activities</h2>
-        <ul class="activities">
+      <section class="activities" aria-labelledby="activities-label">
+        <h2 id="activities-label" class="sr-only">Recent Activities</h2>
+        <ul class="activities__list">
           <li class="activity activity--work" data-activity="work">
+            <article class="activity__card" aria-labelledby="activity-work-title">
               <span class="activity__icon icon--work" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
-                  <h3 class="activity__title">Work</h3>
+                  <h3 class="activity__title" id="activity-work-title">Work</h3>
                   <button type="button" class="activity-options__btn" aria-label="More options for Work activity">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -76,14 +76,16 @@
                   </p>
                 </div>
               </div>
+            </article>
           </li>
 
           <li class="activity activity--play" data-activity="play">
+            <article class="activity__card" aria-labelledby="activity-play-title">
               <span class="activity__icon icon--play" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
-                  <h3 class="activity__title">Play</h3>
+                  <h3 class="activity__title" id="activity-play-title">Play</h3>
                   <button type="button" class="activity-options__btn" aria-label="More options for Play activity">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -99,14 +101,16 @@
                   </p>
                 </div>
               </div>
+            </article>
           </li>
 
           <li class="activity activity--study" data-activity="study">
+            <article class="activity__card" aria-labelledby="activity-study-title">
               <span class="activity__icon icon--study" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
-                  <h3 class="activity__title">Study</h3>
+                  <h3 class="activity__title" id="activity-study-title">Study</h3>
                   <button type="button" class="activity-options__btn" aria-label="More options for Study activity">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -122,14 +126,16 @@
                   </p>
                 </div>
               </div>
+            </article>
           </li>
 
           <li class="activity activity--exercise" data-activity="exercise">
+            <article class="activity__card" aria-labelledby="activity-exercise-title">
               <span class="activity__icon icon--exercise" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
-                  <h3 class="activity__title">Exercise</h3>
+                  <h3 class="activity__title" id="activity-exercise-title">Exercise</h3>
                   <button type="button" class="activity-options__btn" aria-label="More options for Exercise activity">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -145,14 +151,16 @@
                   </p>
                 </div>
               </div>
+            </article>
           </li>
 
           <li class="activity activity--social" data-activity="social">
+            <article class="activity__card" aria-labelledby="activity-social-title">
               <span class="activity__icon icon--social" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
-                  <h3 class="activity__title">Social</h3>
+                  <h3 class="activity__title" id="activity-social-title">Social</h3>
                   <button type="button" class="activity-options__btn" aria-label="More options for Social activity">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -168,14 +176,16 @@
                   </p>
                 </div>
               </div>
+            </article>
           </li>
 
           <li class="activity activity--self-care" data-activity="self-care">
+            <article class="activity__card" aria-labelledby="activity-self-care-title">
               <span class="activity__icon icon--self-care" aria-hidden="true">
               </span>
               <div class="activity__details box">
                 <div class="activity__title-container">
-                  <h3 class="activity__title">Self Care</h3>
+                  <h3 class="activity__title" id="activity-self-care-title">Self Care</h3>
                   <button type="button" class="activity-options__btn" aria-label="More options for Self Care activity">
                     <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -191,16 +201,12 @@
                   </p>
                 </div>
               </div>
+            </article>
           </li>
         </ul>
       </section>
 
-
-
-
-
     </section>
-
   </main>
   <footer class="attribution">
     Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
